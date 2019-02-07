@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 384207260}
   - component: {fileID: 384207259}
   - component: {fileID: 384207263}
+  - component: {fileID: 384207264}
   m_Layer: 0
   m_Name: MainPlatform
   m_TagString: Untagged
@@ -226,7 +227,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384207258}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -4.71, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_Children: []
@@ -247,6 +248,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformConfigs: {fileID: 11400000, guid: 82c8095217ad51742956565a36cbf4d4, type: 2}
   rb: {fileID: 384207260}
+--- !u!114 &384207264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384207258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3415655f077f24998dc4d8eb86873b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToFollow: {fileID: 1088978102}
+  platformConfigs: {fileID: 11400000, guid: 82c8095217ad51742956565a36cbf4d4, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +273,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -273,6 +289,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d227659d537c541b87699e022a65ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToFollow: {fileID: 1088978102}
+  cameraConfigs: {fileID: 11400000, guid: d9fddc2ae3bbc164e94a8fcf67679f9c, type: 2}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

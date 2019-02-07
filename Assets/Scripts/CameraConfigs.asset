@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861d38fceb71e7b43ab48c9db1da02fc, type: 3}
-  m_Name: PlatformConfigs
+  m_Script: {fileID: 11500000, guid: ce97d6dafabb93847829e7ccaf434329, type: 3}
+  m_Name: CameraConfigs
   m_EditorClassIdentifier: 
-  movementSpeed: 0
-  xMoveRestriction: 2.3
-  distanceToTargetY: 7.349
+  distanceToTargetY: 2.639

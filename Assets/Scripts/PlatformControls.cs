@@ -25,8 +25,8 @@ public class PlatformControls : MonoBehaviour
 
     void Update()
     {
-        moveInput = new Vector2(Input.GetAxis("Horizontal"), 0);
-        moveVelocity = moveInput.normalized * platformConfigs.speed;
+        moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+        moveVelocity = moveInput.normalized * platformConfigs.movementSpeed;
     }
 
     private void FixedUpdate()
@@ -34,7 +34,7 @@ public class PlatformControls : MonoBehaviour
         rb.position = new Vector2
         (
             Mathf.Clamp(rb.position.x,
-            -4f, 4f),
+            - platformConfigs.xMoveRestriction, platformConfigs.xMoveRestriction),
            rb.position.y
         );
 

@@ -6,7 +6,8 @@ using UnityEngine;
 public class PlatformConfigs : ScriptableObject
 {
 
-    public float speed;
+    public float movementSpeed;
     public float xMoveRestriction;
+    public float distanceToTargetY;
 
 }
